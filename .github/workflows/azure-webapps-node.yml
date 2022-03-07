@@ -12,5 +12,5 @@ jobs:
     - name: Set up Node.js
       uses: zhoubin-datareachable/dc-action@main
       with:
-        username: 'test111'
+        username: ${{ github.actor }}
         password: ${{ secrets.token5 }}
