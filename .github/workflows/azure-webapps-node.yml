@@ -13,3 +13,4 @@ jobs:
       uses: zhoubin-datareachable/dc-action@main
       with:
         username: 'test111'
+        registry: ghcr.io
