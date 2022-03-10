@@ -1,0 +1,161 @@
+/**
+* @file
+* @date 2022-02-11
+* @author zhoubin
+* @lastModify zhoubin 2022-02-11
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@import '~/Constant/breakPoint.scss';
+@import '~/Constant/font.scss';
+@import '~/Constant/color.scss';
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {
+}
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.pluginsInOrganization_container {
+    padding: 2.4rem 0;
+}
+.pluginsInOrganization_orgContainer {
+    margin-bottom: 1.6rem;
+}
+.pluginsInOrganization_org {
+    width: auto !important;
+    height: 3.2rem !important;
+    .dropDownListV2_container {
+        border: 0.1rem solid transparent;
+        &:focus {
+            background: $bg;
+        }
+    }
+    .pluginsInOrganization_pluginName,
+    img {
+        order: 1;
+    }
+    .dropDownListV2_content {
+        width: 100%;
+    }
+    svg {
+        margin-left: 1.2rem;
+        font-size: 1.1rem;
+    }
+}
+.pluginsInOrganization_floating {
+    .dropDownListV2_labelContainer {
+        padding: 0 0.4rem;
+    }
+    .dropDownListV2_floatingLabel,
+    .dropDownListV2_floatingLabelLast {
+        &:hover {
+            background: none;
+        }
+    }
+    .pluginsInOrganization_floatingItem {
+        padding-left: 0.8rem;
+        .pluginsInOrganization_pluginName {
+            width: 17.6rem;
+            @include body_2();
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        &:hover {
+            background: $primary_50;
+        }
+    }
+    .dropDownListV2_floatingLabelActive {
+        .pluginsInOrganization_floatingItem {
+            background: $primary_10;
+            border-radius: 0.4rem;
+        }
+        .pluginsInOrganization_pluginName {
+            color: $primary_600;
+        }
+    }
+}
+.pluginsInOrganization_floatingItem {
+    display: flex;
+    align-items: center;
+    height: 2.8rem;
+    img {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: 0.8rem;
+        border-radius: 50%;
+    }
+}
+.searchPluginInput_container {
+    margin-left: 1rem;
+}
+.pluginsInOrganization_pluginList {
+    margin-top: 1.2rem;
+    width: 100%;
+}
+.pluginsInOrganization_pluginItem {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10.8rem;
+    &:nth-of-type(n + 2) {
+        margin-top: 0.8rem;
+    }
+    img {
+        width: 5rem;
+        height: 5rem;
+        margin-left: 1rem;
+        margin-right: 1.6rem;
+        border-radius: 0.6rem;
+    }
+    &:hover {
+        background: $neutral_50;
+        border-radius: 1rem;
+        box-shadow: $shadow_small;
+        .pluginsInOrganization_pluginInfo_enter {
+            display: block;
+        }
+    }
+}
+.pluginsInOrganization_pluginInfo {
+    width: 100%;
+}
+.pluginsInOrganization_pluginInfo_title {
+    @include subtitle_2();
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: $neutral_600;
+    .pluginsInOrganization_pluginInfo_enter {
+        display: none;
+        font-size: 1.6rem;
+        margin-right: 1.3rem;
+        color: $primary_600;
+        cursor: pointer;
+    }
+}
+.pluginsInOrganization_pluginInfo_keyword {
+    display: flex;
+    span {
+        @include label_2();
+        display: inline-block;
+        margin: 0.7rem 0;
+        padding: 0 0.4rem;
+        color: $primary_500;
+        background: $primary_50;
+        border-radius: 1.5rem;
+        &:nth-of-type(n + 2) {
+            margin-left: 0.4rem;
+        }
+    }
+}
+.pluginsInOrganization_pluginInfo_description {
+    @include label();
+    color: $neutral_400;
+}
+.pluginsInOrganization_pagination {
+    margin-top: 3rem;
+    margin-bottom: 1.8rem;
+}
+/* <--------------------------- * SECTION1 * --------------------------- */

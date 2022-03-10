@@ -1,0 +1,43 @@
+/**
+* @file
+* @date 2022-01-14
+* @author zhoubin
+* @lastModify zhoubin 2022-01-14
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@import '~/Constant/breakPoint.scss';
+@import '~/Constant/font.scss';
+@import '~/Constant/color.scss';
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {
+}
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.noPermissionBox_container {
+    position: relative;
+    width: 34.6rem;
+    height: 16.8rem;
+    padding-left: 2.5rem;
+    padding-top: 3rem;
+}
+.noPermissionBox_title {
+    display: flex;
+    font: $fs_r_14;
+    line-height: 2.2rem;
+    > div {
+        width: 23rem;
+        color: $gray1;
+    }
+}
+.noPermissionBox_icon {
+    margin-right: 1rem;
+}
+.noPermissionBox_btn {
+    position: absolute;
+    right: 3rem;
+    bottom: 2.1rem;
+}
+/* <--------------------------- * SECTION1 * --------------------------- */

@@ -1,0 +1,62 @@
+/**
+* @file
+* @date 2022-01-13
+* @author zhoubin
+* @lastModify zhoubin 2022-01-13
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@import '~/Constant/breakPoint.scss';
+@import '~/Constant/font.scss';
+@import '~/Constant/color.scss';
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {
+}
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.editReturnValue_container {
+    position: relative;
+    padding: 0 2.4rem;
+    width: 60rem;
+    height: 46.8rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.editReturnValue_title {
+    @include h_2();
+    margin-top: 3.2rem;
+    color: $neutral_700;
+}
+.editReturnValue_hint {
+    @include body_1();
+    margin-top: 0.8rem;
+}
+.editReturnValue_argumentTypeAndName {
+    margin-top: 3.2rem;
+    > span {
+        @include subtitle_1();
+        display: block;
+        height: 2.4rem;
+        margin-bottom: 0.8rem;
+        color: #212121;
+    }
+}
+
+.editReturnValue_instruction {
+    margin-top: 2rem;
+    > span {
+        @include subtitle_1();
+        display: block;
+        margin-bottom: 0.8rem;
+        height: 2.4rem;
+        color: #212121;
+    }
+}
+.editReturnValue_btn {
+    position: absolute;
+    bottom: 2.4rem;
+    right: 2.4rem;
+}
+/* <--------------------------- * SECTION1 * --------------------------- */

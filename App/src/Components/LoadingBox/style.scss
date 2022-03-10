@@ -1,0 +1,60 @@
+/**
+* @file 
+* @date 2021-08-24
+* @author zhoubin 
+* @lastModify zhoubin  2021-08-24
+*/
+
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+
+/** Import all the reference constant after this line */
+
+@import '~/Constant/breakPoint.scss';
+@import '~/Constant/font.scss';
+@import '~/Constant/color.scss';
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.loadingBox_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 34.6rem;
+    height: 14.2rem;
+    font: $fs_r_14;
+    color: $background;
+    user-select: none;
+    > span {
+        font: $fs_m_16;
+    }
+}
+.loadingBox_loadingContainer {
+    display: flex;
+    align-items: center;
+    height: 8.3rem;
+    color: $background;
+    svg {
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+    > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.loadingBox_noClose {
+    background: rgba($type, 0.6);
+    transition-duration: 0s !important;
+    pointer-events: none;
+    .alert_container {
+        background: none;
+        box-shadow: none;
+        svg {
+            display: none;
+        }
+    }
+}
+/* <--------------------------- * SECTION1 * --------------------------- */ ;

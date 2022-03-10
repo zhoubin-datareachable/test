@@ -1,0 +1,162 @@
+/**
+* @file
+* @date 2022-02-11
+* @author zhoubin
+* @lastModify zhoubin 2022-02-11
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@import '~/Constant/breakPoint.scss';
+@import '~/Constant/font.scss';
+@import '~/Constant/color.scss';
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {
+}
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.editPaperSetting_container {
+    display: flex;
+}
+.editPaperSetting_according {
+    padding-top: 2.4rem;
+    width: 30.4rem;
+    min-height: 26.2rem;
+    border-right: 0.1rem solid $neutral_200;
+}
+.editPaperSetting_empty {
+    width: 100%;
+    text-align: center;
+    img {
+        width: 9rem;
+        height: 9rem;
+    }
+    .empty_description {
+        @include body_2();
+        width: 28.8rem;
+        color: $neutral_300;
+    }
+}
+.editPaperSetting_setting {
+    > .accordion_container > .accordion_item {
+        > .accordion_itemContent {
+            justify-content: flex-start;
+            &::before {
+                content: '';
+                display: inline-block;
+                margin-right: 0.8rem;
+                width: 0.6rem;
+                height: 0.6rem;
+                background: $primary_400;
+                border-radius: 0.15rem;
+            }
+        }
+        > .accordion_itemContent__active {
+            color: $primary_400;
+        }
+    }
+    .accordion_itemContent {
+        padding-left: 0 !important;
+    }
+    .accordion_itemContent__active {
+        background: none !important;
+    }
+    .accordion_subContainer {
+        position: relative;
+        padding-left: 1.3rem;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0rem;
+            left: 0;
+            width: 0.3rem;
+            height: 7rem;
+            background: $neutral_200;
+        }
+        .accordion_itemContent__active {
+            position: relative;
+            color: $primary_400;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0.75rem;
+                left: -1.3rem;
+                width: 0.3rem;
+                height: 2rem;
+                background: $primary_400;
+            }
+        }
+    }
+}
+.editPaperSetting_settingItem {
+    padding: 2.4rem;
+    padding-left: 2rem;
+}
+.editPaperSetting_settingItem_title {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $neutral_500;
+}
+.editPaperSetting_settingItem_description {
+    @include body_2();
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: $neutral_500;
+    padding-right: 7rem;
+}
+.editPaperSetting_settingItem_boolean {
+    display: flex;
+    align-items: center;
+    > span {
+        @include subtitle_2();
+        margin-right: 0.8rem;
+    }
+}
+.editPaperSetting_settingItem_booleanInput {
+    width: 45.2rem !important;
+}
+.editPaperSetting_settingItem_numberInput {
+    position: relative;
+    .editPaperSetting_settingItem_editIcon {
+        position: absolute;
+        top: 0.2rem;
+        right: 0.2rem;
+        width: 3.3rem;
+        height: 3.3rem;
+        line-height: 3.3rem;
+        z-index: 9999;
+        background: $background;
+        > svg {
+            color: $primary_600;
+        }
+    }
+}
+.editPaperSetting_settingItem_number {
+    display: flex;
+    align-items: center;
+    > span {
+        @include subtitle_2();
+        margin-right: 0.8rem;
+    }
+}
+.editPaperSetting_pluginName {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 2.4rem;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    img {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: 0.8rem;
+        border-radius: 0.4rem;
+    }
+    span {
+        @include body_2();
+        color: $neutral_500;
+    }
+}
+/* <--------------------------- * SECTION1 * --------------------------- */
