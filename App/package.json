@@ -82,7 +82,6 @@
         "webpack-merge": "^5.8.0"
     },
     "dependencies": {
-        "@datareachable/dr_front_qfvalidation": "0.0.1",
         "@fortawesome/fontawesome-svg-core": "^1.2.32",
         "@fortawesome/free-brands-svg-icons": "^5.15.1",
         "@fortawesome/free-regular-svg-icons": "^5.15.1",
