@@ -10,7 +10,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Set up Node.js
-      uses: zhoubin-datareachable/dc-action@master
+      uses: zhoubin-datareachable/dc-action@main
       with:
         username: ${{ github.actor }}
         password: ${{ secrets.token5 }}
