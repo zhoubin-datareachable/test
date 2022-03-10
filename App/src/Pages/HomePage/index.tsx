@@ -13,7 +13,6 @@
  */
 /* <------------------------------------ **** DEPENDENCE IMPORT START **** ------------------------------------ */
 /** This section will include all the necessary dependence for this tsx file */
-import { Alert, Icon } from '@datareachable/dr_front_componentlibrary';
 import React from 'react';
 import style from './style.scss';
 /* <------------------------------------ **** DEPENDENCE IMPORT END **** ------------------------------------ */
