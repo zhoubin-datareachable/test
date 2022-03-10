@@ -12,7 +12,7 @@ jobs:
     - name: Set up Node.js
       uses: zhoubin-datareachable/dc-action@main
       with:
-        name: "dr_bin_test"
+        name: "dr_bin_test1"
         username: ${{ github.actor }}
         password: ${{ secrets.token5 }}
         registry: ghcr.io
