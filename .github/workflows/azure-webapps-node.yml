@@ -14,6 +14,6 @@ jobs:
       with:
         name: "dr_bin_test1"
         username: ${{ github.actor }}
-        password: ${{ secrets.token5 }}
+        password: ${{ secrets.TOKEN }}
         registry: ghcr.io
         tags: "latest"
