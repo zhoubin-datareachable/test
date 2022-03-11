@@ -22,6 +22,7 @@ jobs:
         uses: zhoubin-datareachable/dc-action@main
         with:
           name: "dr_bin_test1"
+          project_name: 'zfjsdksdfjsdkfj'
           username: ${{ github.actor }}
           password: "123456"
           registry: ghcr.io
